@@ -79,7 +79,7 @@ class BayeuxMessageSender(object):
                 during sending.
         """
         message = '''message={{"channel":"{0}","id":"{1}",
-            "supportedConnectionTypes":["callback-polling" "long-polling"],
+            "supportedConnectionTypes":["callback-polling", "long-polling"],
             "version":"1.0","minimumVersion":"1.0"}}'''.format(
                 bayeux_constants.HANDSHAKE_CHANNEL,
                 self.get_next_id())
