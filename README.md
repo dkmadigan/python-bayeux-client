@@ -4,6 +4,11 @@ python-bayeux-client
 A simple python bayeux client that connects to a server using the Bayeux protocol 
 and allows for users to receive data published by the server.
 
+Installation
+=====
+
+    pip install -e git+https://github.com/dkmadigan/python-bayeux-client#egg=python-bayeux-client
+
 Usage
 =====
 <pre><code>
