@@ -102,9 +102,9 @@ class BayeuxClient(object):
                     thread.daemon = True
                     thread.start()
                 self.sender.handshake(self._handshake_error)
-            else:
-                #Client already running
-                logging.info('Client already running')
+            #else:
+            #    #Client already running
+            #    logging.info('Client already running')
 
     def stop(self):
         """Stops the client.
@@ -121,9 +121,9 @@ class BayeuxClient(object):
                     self.timer.cancel()
                     self.timer = None
                 self.sender.disconnect(self._disconnect_error)
-            else:
-                #Client not running
-                logging.info('Client not running')
+            #else:
+            #    #Client not running
+            #    logging.info('Client not running')
 
     def register(self, id, callback):
         """Subscribe for a particular event.
